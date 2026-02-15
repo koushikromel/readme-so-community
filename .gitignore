@@ -39,4 +39,4 @@ public/sw.js
 public/*.map
 
 yarn.lock
-CHANGELOG.md
+.docs/
