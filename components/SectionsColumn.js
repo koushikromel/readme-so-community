@@ -39,6 +39,12 @@ export const SectionsColumn = ({
   getTemplate,
   darkMode,
 }) => {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   const sensors = useSensors(
     useSensor(MouseSensor),
     useSensor(TouchSensor),
@@ -46,6 +52,8 @@ export const SectionsColumn = ({
       coordinateGetter: sortableKeyboardCoordinates,
     })
   )
+
+  if (!mounted) return null
 
   const [pageRefreshed, setpageRefreshed] = useState(false)
   const [addAction, setAddAction] = useState(false)
