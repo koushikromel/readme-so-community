@@ -4,13 +4,12 @@ import { DefaultSeo } from 'next-seo'
 import { appWithTranslation } from 'next-i18next'
 
 import SEO from '../next-seo.config.js'
-import NextNProgress from 'nextjs-progressbar'
-import { emerald } from 'tailwindcss/colors'
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <NextNProgress color={emerald[500]} height={4} />
+      <ProgressBar height="4px" color="#10b981" options={{ showSpinner: false }} shallowRouting />
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </>
