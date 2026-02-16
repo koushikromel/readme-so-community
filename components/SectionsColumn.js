@@ -53,8 +53,6 @@ export const SectionsColumn = ({
     })
   )
 
-  if (!mounted) return null
-
   const [pageRefreshed, setpageRefreshed] = useState(false)
   const [addAction, setAddAction] = useState(false)
   const [currentSlugList, setCurrentSlugList] = useState([])
@@ -200,6 +198,8 @@ export const SectionsColumn = ({
 
     setFilteredSlugs(suggestedSlugs)
   }, [searchFilter])
+
+  if (!mounted) return null
 
   return (
     <div className="sections w-80">
