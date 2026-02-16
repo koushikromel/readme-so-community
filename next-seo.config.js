@@ -29,7 +29,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://readme-so-community.vercel.app/',
+    url: 'https://readme-so-community.vercel.app',
     title: 'readme-so-community',
     description: `Use readme-so-community's markdown editor and templates to easily create a ReadMe for your projects`,
     images: [

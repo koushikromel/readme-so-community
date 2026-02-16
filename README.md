@@ -1,8 +1,18 @@
-# readme-so-community
+## Project Status
+
+This project is a community-maintained continuation of [readme.so](https://github.com/octokatherine/readme.so).
+
+The original repository appears inactive. This version is independently maintained and accepts new features, fixes, and releases.
+
+#### Original author: [Katherine Oelsner](https://github.com/octokatherine)
+
+#### Current maintainer: [Koushik Romel](https://github.com/koushikromel)
+
+# readme.so
 
 Readme-so-community is an online editor to help developers make readmes for their project.
 
-Link to production site: [readme-so-community.vercel.app](https://readme-so-community.vercel.app/)
+Link to production site: [readme-so-community.vercel.app](https://readme-so-community.vercel.app)
 
 ## Features
 
