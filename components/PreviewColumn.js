@@ -4,17 +4,7 @@ import remarkGfm from 'remark-gfm'
 import { TAB } from '../utils/constants'
 import RawPreview from './RawPreview'
 
-export const PreviewColumn = ({ selectedSectionSlugs, getTemplate, selectedTab }) => {
-  selectedSectionSlugs = [...new Set(selectedSectionSlugs)]
-  const markdown = selectedSectionSlugs.reduce((acc, section) => {
-    const template = getTemplate(section)
-    if (template) {
-      return `${acc}${template.markdown}`
-    } else {
-      return acc
-    }
-  }, ``)
-
+export const PreviewColumn = ({ selectedSectionSlugs, getTemplate, selectedTab, markdown }) => {
   const showPreview = selectedTab === TAB.PREVIEW
   return (
     <div

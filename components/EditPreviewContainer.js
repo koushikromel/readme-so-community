@@ -7,6 +7,8 @@ import { TAB } from '../utils/constants'
 import Tabs from './Tabs'
 import useDeviceDetect from '../hooks/useDeviceDetect'
 
+import ShareToLLM from './ShareToLLM'
+
 const EditPreviewContainer = ({
   templates,
   setTemplates,
@@ -24,6 +26,15 @@ const EditPreviewContainer = ({
   useEffect(() => {
     setSelectedTab(isMobile ? TAB.EDITOR : TAB.PREVIEW)
   }, [isMobile])
+
+  const startMarkdown = [...new Set(selectedSectionSlugs)].reduce((acc, section) => {
+    const template = getTemplate(section)
+    if (template) {
+      return `${acc}${template.markdown}`
+    } else {
+      return acc
+    }
+  }, ``)
 
   const showEditorColumn = !isMobile || selectedTab === TAB.EDITOR
   const showPreviewColumn = !isMobile || selectedTab === TAB.PREVIEW || selectedTab === TAB.RAW
@@ -58,7 +69,7 @@ const EditPreviewContainer = ({
       {showPreviewColumn ? (
         <div className="px-3 flex-1">
           {!isMobile ? (
-            <div className="border-b border-gray-200">
+            <div className="border-b border-gray-200 flex items-center justify-between">
               <nav className="-mb-px flex space-x-8" aria-label="Tabs">
                 <ColumnHeader.Tab
                   isActive={selectedTab === TAB.PREVIEW}
@@ -75,12 +86,16 @@ const EditPreviewContainer = ({
                   {t('preview-column-raw')}
                 </ColumnHeader.Tab>
               </nav>
+              <div className="mb-1">
+                <ShareToLLM markdown={startMarkdown} />
+              </div>
             </div>
           ) : null}
           <PreviewColumn
             selectedSectionSlugs={selectedSectionSlugs}
             getTemplate={getTemplate}
             selectedTab={selectedTab}
+            markdown={startMarkdown}
           />
         </div>
       ) : null}
