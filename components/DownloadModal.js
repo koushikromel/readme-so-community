@@ -30,9 +30,10 @@ Leaving: "ease-in duration-200"
             onClick={() => setShowModal(false)}
           />
           {/* This element is to trick the browser into centering the modal contents. */}
-          <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
-            ​
-          </span>
+          <span
+            className="hidden sm:inline-block sm:align-middle sm:h-screen"
+            aria-hidden="true"
+          ></span>
           {/*
 Modal panel, show/hide based on modal state.
 
@@ -57,7 +58,7 @@ Leaving: "ease-in duration-200"
                   <p className="text-sm text-gray-500 dark:text-gray-300">
                     {t('download-reach-out')}{' '}
                     <a
-                      href="https://twitter.com/katherinecodes"
+                      href="https://x.com/koushik_romel"
                       target="_blank"
                       className="text-emerald-500 hover:text-emerald-400"
                     >
@@ -70,14 +71,14 @@ Leaving: "ease-in duration-200"
               </div>
             </div>
             <div className="flex justify-center mx-auto mt-5 sm:mt-6">
-              <a href="https://www.buymeacoffee.com/katherinecodes">
-                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=katherinecodes&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
+              <a href="https://www.buymeacoffee.com/koushikromel">
+                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=koushikromel&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
               </a>
             </div>
             <div className="flex justify-center items-center mt-3">
               <iframe
-                src="https://github.com/sponsors/octokatherine/button"
-                title="Sponsor octokatherine"
+                src="https://github.com/sponsors/koushikromel/button"
+                title="Sponsor koushikromel"
                 height="35"
                 width="116"
                 className="border-0"

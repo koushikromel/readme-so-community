@@ -46,7 +46,7 @@ export const Nav = ({
         href="/"
         className="focus:outline-none focus:ring-2 focus:ring-emerald-400 flex items-center"
       >
-        <img className="w-auto h-12" src="readme.svg" alt="readme.so logo" />
+        <img className="w-auto h-12" src="readme.svg" alt="readme-so-community logo" />
       </Link>
       <div className="flex flex-row-reverse md:flex-row">
         {/* visible for sm only */}

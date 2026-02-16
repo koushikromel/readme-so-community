@@ -14,7 +14,7 @@ const Home = () => {
         <script
           async
           defer
-          data-domain="readme.so"
+          data-domain="readme-so-community.vercel.app"
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
@@ -90,7 +90,7 @@ const Home = () => {
                   <img
                     className="w-auto h-12 cursor-pointer"
                     src="readme.svg"
-                    alt="readme.so logo"
+                    alt="readme-so-community logo"
                     // style={{ height: '3rem' }}
                   />
                 </Link>
@@ -126,10 +126,10 @@ const Home = () => {
               <div className="flex justify-center items-center mt-3">
                 <a
                   className="group inline-flex items-center px-4 py-2 text-sm  bg-gray-50 border rounded-lg text-gray-500 w-[116px] h-[35px] justify-center transition-colors hover:bg-gray-100"
-                  aria-label="Sponsor octokatherine"
+                  aria-label="Sponsor koushikromel"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/sponsors/octokatherine"
+                  href="https://github.com/sponsors/koushikromel"
                 >
                   <div className="">
                     <img
@@ -167,14 +167,14 @@ const Home = () => {
                 className="hover:text-emerald-500"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://twitter.com/katherinecodes"
+                href="https://x.com/koushik_romel"
               >
-                Katherine Oelsner
+                Koushik Romel
               </a>
             </h2>
             <div className="flex justify-center mt-4">
               <a
-                href="https://github.com/octokatherine/readme.so"
+                href="https://github.com/koushikromel/readme-so-community"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="github logo"

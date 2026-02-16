@@ -1,6 +1,6 @@
 export default {
-  defaultTitle: 'readme.so',
-  description: `Use readme.so's markdown editor and templates to easily create a ReadMe for your projects`,
+  defaultTitle: 'readme-so-community',
+  description: `Use readme-so-community's markdown editor and templates to easily create a ReadMe for your projects`,
   additionalMetaTags: [
     {
       property: 'keywords',
@@ -29,23 +29,23 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://readme.so/',
-    title: 'readme.so',
-    description: `Use readme.so's markdown editor and templates to easily create a ReadMe for your projects`,
+    url: 'https://readme-so-community.vercel.app/',
+    title: 'readme-so-community',
+    description: `Use readme-so-community's markdown editor and templates to easily create a ReadMe for your projects`,
     images: [
       {
-        url: 'https://readme.so/readme.png',
+        url: 'https://readme-so-community.vercel.app/readme.png',
         width: 375,
         height: 375,
         alt: 'Og Image Alt',
       },
     ],
-    site_name: 'readme.so',
+    site_name: 'readme-so-community',
     imageWidth: 1200,
     imageHeight: 1200,
   },
   twitter: {
-    handle: '@katherinecodes',
+    handle: '@koushik_romel',
     cardType: 'summary',
   },
 }
