@@ -114,7 +114,7 @@ export function LanguageDropDown({ posts }) {
         <li className="">
           <a
             className="block w-32 px-4 py-2 text-xs break-words whitespace-no-wrap bg-gray-200 hover:bg-emerald-400"
-            href="https://github.com/octokatherine/readme.so/issues/new"
+            href="https://github.com/koushikromel/readme-so-community/issues/new"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: readme.so
+    container_name: readme-so-community
     restart: always
     ports:
       - '3000:3000'

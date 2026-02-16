@@ -39,6 +39,12 @@ export const SectionsColumn = ({
   getTemplate,
   darkMode,
 }) => {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   const sensors = useSensors(
     useSensor(MouseSensor),
     useSensor(TouchSensor),
@@ -192,6 +198,8 @@ export const SectionsColumn = ({
 
     setFilteredSlugs(suggestedSlugs)
   }, [searchFilter])
+
+  if (!mounted) return null
 
   return (
     <div className="sections w-80">

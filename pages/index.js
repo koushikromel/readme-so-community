@@ -14,12 +14,12 @@ const Home = () => {
         <script
           async
           defer
-          data-domain="readme.so"
+          data-domain="readme-so-community.vercel.app"
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
       <div className="bg-gray-50">
-        <div className="relative overflow-hidden">
+        <div className="relative">
           <div className="absolute inset-y-0 w-full h-full" aria-hidden="true">
             <div className="relative h-full">
               <svg
@@ -90,7 +90,7 @@ const Home = () => {
                   <img
                     className="w-auto h-12 cursor-pointer"
                     src="readme.svg"
-                    alt="readme.so logo"
+                    alt="readme-so-community logo"
                     // style={{ height: '3rem' }}
                   />
                 </Link>
@@ -114,10 +114,11 @@ const Home = () => {
               <div className="flex justify-center mt-6">
                 <div className="flex flex-col items-center">
                   <span className="inline-flex rounded-md shadow ">
-                    <Link href="/editor">
-                      <a className="inline-flex items-center px-4 py-2 font-medium text-xl bg-emerald-500 hover:bg-emerald-400 border border-transparent rounded-lg text-white w-[250px] h-[54px] justify-center">
-                        {t('get-started')}
-                      </a>
+                    <Link
+                      href="/editor"
+                      className="inline-flex items-center px-4 py-2 font-medium text-xl bg-emerald-500 hover:bg-emerald-400 border border-transparent rounded-lg text-white w-[250px] h-[54px] justify-center"
+                    >
+                      {t('get-started')}
                     </Link>
                   </span>
                 </div>
@@ -125,10 +126,10 @@ const Home = () => {
               <div className="flex justify-center items-center mt-3">
                 <a
                   className="group inline-flex items-center px-4 py-2 text-sm  bg-gray-50 border rounded-lg text-gray-500 w-[116px] h-[35px] justify-center transition-colors hover:bg-gray-100"
-                  aria-label="Sponsor octokatherine"
+                  aria-label="Sponsor koushikromel"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/sponsors/octokatherine"
+                  href="https://github.com/sponsors/koushikromel"
                 >
                   <div className="">
                     <img
@@ -166,14 +167,14 @@ const Home = () => {
                 className="hover:text-emerald-500"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://twitter.com/katherinecodes"
+                href="https://x.com/koushik_romel"
               >
-                Katherine Oelsner
+                Koushik Romel
               </a>
             </h2>
             <div className="flex justify-center mt-4">
               <a
-                href="https://github.com/octokatherine/readme.so"
+                href="https://github.com/koushikromel/readme-so-community"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="github logo"

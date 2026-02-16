@@ -6,7 +6,7 @@ import { en_EN } from '../data/section-templates-en_EN'
 
 const mockTranslations = {
   'editor-desktop-optimized': 'This site is optimized for desktop',
-  'editor-visit-desktop': 'Please visit readme.so on a desktop to create your readme!',
+  'editor-visit-desktop': 'Please visit readme-so-community on a desktop to create your readme!',
 }
 
 jest.mock('next-i18next', () => ({
