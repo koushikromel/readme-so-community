@@ -19,7 +19,7 @@ const Home = () => {
         ></script>
       </Head>
       <div className="bg-gray-50">
-        <div className="relative overflow-hidden">
+        <div className="relative">
           <div className="absolute inset-y-0 w-full h-full" aria-hidden="true">
             <div className="relative h-full">
               <svg
